@@ -5,7 +5,6 @@ const COMMENT_API_LISTING_URL = "https://jsonplaceholder.typicode.com/posts";
 class CommentService {
 
     getComment(){
-        console.log('get the data')
         return axios.get(COMMENT_API_LISTING_URL);
     }
 
