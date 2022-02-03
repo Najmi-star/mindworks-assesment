@@ -42,7 +42,8 @@ class CommentComponent extends React.Component {
 
     handleFormChange = (event) => {
         this.state.filterComment = this.state.commentList
-        let filterResult = this.state.filterComment.filter(item => item.name.includes(event.target.value))
+        let filterResult = this.state.filterComment.filter(item => item.name.includes(event.target.value) 
+        || item.email.toUpperCase().includes(event.target.value.toUpperCase()) || item.body.includes(event.target.value))
         console.log('filter =>', filterResult)
         this.setState({
             input: event.target.value,
