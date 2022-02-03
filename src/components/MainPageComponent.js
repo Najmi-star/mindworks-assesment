@@ -17,7 +17,7 @@ class MainPageComponent extends React.Component {
     }
 
     componentDidMount() {
-        CommentService.getComment().then(response => response.data)
+        CommentService.getPost().then(response => response.data)
             .then((data) => {
                 this.setState({
                     comment: data,

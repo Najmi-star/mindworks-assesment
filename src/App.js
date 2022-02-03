@@ -10,7 +10,6 @@ function App() {
           <Switch>
             <Route path="/" exact component={MainPageComponent}></Route>
             <Route path="/comment" component={MainPageComponent}></Route>
-            {/* <Route path="/view-employee/:id" component={ViewEmployeeComponent}></Route> */}
           </Switch>
         </div>
       </Router>
