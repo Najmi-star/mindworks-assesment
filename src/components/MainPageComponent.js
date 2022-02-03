@@ -28,9 +28,10 @@ class MainPageComponent extends React.Component {
     }
 
     handleFormChange = (event) => {
+        this.state.commentFilter = this.state.comment
         let filterResult = this.state.comment.filter(item => item.body.includes(event.target.value))
         console.log('filter =>', filterResult)
-        this.setState({input: event.target.value})
+        this.setState({input: event.target.value, commentFilter: filterResult})
     }
 
     render() {
